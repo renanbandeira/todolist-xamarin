@@ -19,9 +19,11 @@ namespace RenanBandeira.Activities
     {
         ListAdapter MyAdapter;
         ListView TodoList;
+        TextView ItemsCount;
         StorageConnection Storage;
         List<ListItem> Items;
         FilterType Filter;
+        int countActiveItems;
 
         public bool OnEditorAction(TextView v, [GeneratedEnum] ImeAction actionId, KeyEvent e)
         {
@@ -31,6 +33,7 @@ namespace RenanBandeira.Activities
                 item.Content = v.Text;
                 Storage.insertData(item);
                 MyAdapter.AddItem(item);
+                UpdateToDoCount();
                 v.Text = "";
                 return true;
             }
@@ -48,12 +51,14 @@ namespace RenanBandeira.Activities
             Items.Find(x => x.ID == Item.ID).IsActive = Item.IsActive;
             Storage.updateData(Item);
             MyAdapter.SetItems(getFilteredItems());
+            UpdateToDoCount();
         }
 
         private void DeleteItem(ListItem Item)
         {
             Items.Remove(Item);
             Storage.removeData(Item);
+            UpdateToDoCount();
         }
 
         protected override void OnCreate(Bundle bundle)
@@ -72,10 +77,27 @@ namespace RenanBandeira.Activities
             FindViewById(Resource.Id.filter_all_button).Click += clearFilter;
             FindViewById(Resource.Id.filter_active_button).Click += FilterActiveItems;
             FindViewById(Resource.Id.filter_inactive_button).Click += FilterInactiveItems;
+            FindViewById(Resource.Id.clear_completed_button).Click += ClearCompletedItems;
+
 
             Items = Storage.GetData();
             MyAdapter = new ListAdapter(this, this.EditItem, this.Toggleitem, this.DeleteItem, Items);
             TodoList.Adapter = MyAdapter;
+            ItemsCount = FindViewById<TextView>(Resource.Id.items_count_textview);
+            UpdateToDoCount();
+        }
+
+        private void ClearCompletedItems(object sender, EventArgs e)
+        {
+            Items.FindAll(Item => !Item.IsActive).ForEach(X => Storage.removeData(X));
+            Items.RemoveAll(Item => !Item.IsActive);
+            MyAdapter.SetItems(getFilteredItems());
+        }
+
+        private void UpdateToDoCount()
+        {
+            countActiveItems = Items.FindAll(Item => Item.IsActive).Count;
+            ItemsCount.Text = GetString(Resource.String.info_todo_count, countActiveItems);
         }
 
         private void clearFilter(object sender, EventArgs e)

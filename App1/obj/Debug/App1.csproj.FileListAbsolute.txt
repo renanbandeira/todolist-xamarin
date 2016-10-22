@@ -62,5 +62,6 @@ C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\TodoL
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\TodoList.pdb
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\bin\Debug\TodoList.dll.mdb
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\android\assets\TodoList.dll.mdb
+C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\values\dimens.xml
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\TodoList.dll.mdb
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\bin\Debug\TodoList.dll.mdb

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <dimen name="todo_count_size">16sp</dimen>
+  <dimen name="activity_padding">12dp</dimen>
+</resources>

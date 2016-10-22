@@ -42,6 +42,25 @@ namespace RenanBandeira
 			}
 		}
 		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7f050001
+			public const int activity_padding = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int todo_count_size = 2131034112;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -61,29 +80,35 @@ namespace RenanBandeira
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int active_item_checkbox = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int active_item_checkbox = 2131099648;
 			
-			// aapt resource value: 0x7f050005
-			public const int filter_active_button = 2131034117;
+			// aapt resource value: 0x7f060009
+			public const int clear_completed_button = 2131099657;
 			
-			// aapt resource value: 0x7f050004
-			public const int filter_all_button = 2131034116;
+			// aapt resource value: 0x7f060005
+			public const int filter_active_button = 2131099653;
 			
-			// aapt resource value: 0x7f050006
-			public const int filter_inactive_button = 2131034118;
+			// aapt resource value: 0x7f060004
+			public const int filter_all_button = 2131099652;
 			
-			// aapt resource value: 0x7f050001
-			public const int item_content_edittext = 2131034113;
+			// aapt resource value: 0x7f060006
+			public const int filter_inactive_button = 2131099654;
 			
-			// aapt resource value: 0x7f050002
-			public const int item_delete_button = 2131034114;
+			// aapt resource value: 0x7f060001
+			public const int item_content_edittext = 2131099649;
 			
-			// aapt resource value: 0x7f050003
-			public const int todo_item_edittext = 2131034115;
+			// aapt resource value: 0x7f060002
+			public const int item_delete_button = 2131099650;
 			
-			// aapt resource value: 0x7f050007
-			public const int todo_listview = 2131034119;
+			// aapt resource value: 0x7f060008
+			public const int items_count_textview = 2131099656;
+			
+			// aapt resource value: 0x7f060003
+			public const int todo_item_edittext = 2131099651;
+			
+			// aapt resource value: 0x7f060007
+			public const int todo_listview = 2131099655;
 			
 			static Id()
 			{
@@ -117,14 +142,14 @@ namespace RenanBandeira
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040002
-			public const int ApplicationName = 2130968578;
-			
 			// aapt resource value: 0x7f040001
-			public const int Hello = 2130968577;
+			public const int ApplicationName = 2130968577;
 			
 			// aapt resource value: 0x7f040008
 			public const int button_add = 2130968584;
+			
+			// aapt resource value: 0x7f04000b
+			public const int button_clear_completed = 2130968587;
 			
 			// aapt resource value: 0x7f04000a
 			public const int button_delete = 2130968586;
@@ -143,6 +168,9 @@ namespace RenanBandeira
 			
 			// aapt resource value: 0x7f040003
 			public const int hint_todo_item_add = 2130968579;
+			
+			// aapt resource value: 0x7f040002
+			public const int info_todo_count = 2130968578;
 			
 			// aapt resource value: 0x7f040000
 			public const int library_name = 2130968576;

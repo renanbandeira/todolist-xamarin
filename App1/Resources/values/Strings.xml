@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">To-Do List</string>
+
+    <string name="info_todo_count">%1$d items left</string>
     <string name="hint_todo_item_add">Add new To-Do item</string>
     
   <string name="title_filter">Filter: </string>
@@ -12,4 +13,5 @@
   <string name="button_add">Add</string>
   <string name="button_edit">Edit</string>
   <string name="button_delete">Delete</string>
+  <string name="button_clear_completed">Clear Completed</string>
 </resources>
