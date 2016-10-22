@@ -11,6 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class dimen {
+        public static final int activity_padding=0x7f050001;
         public static final int todo_count_size=0x7f050000;
     }
     public static final class drawable {
