@@ -4,7 +4,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="TODO List" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="TODO List" android:name="md5579855c995bdb073d8182511e793544c.MainActivity">
+    <activity android:icon="@drawable/icon" android:label="TODO List" android:name="md5d9e7a1871ab5dab2020fb4c16b3bc62d.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

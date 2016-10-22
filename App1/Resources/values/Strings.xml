@@ -10,4 +10,6 @@
   <string name="button_filter_active">Active</string>
   <string name="button_filter_inactive">Inactive</string>
   <string name="button_add">Add</string>
+  <string name="button_edit">Edit</string>
+  <string name="button_delete">Delete</string>
 </resources>

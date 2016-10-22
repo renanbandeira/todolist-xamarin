@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>21/10/2016 18:51:09</xs:documentation>
+    <xs:documentation>22/10/2016 12:36:07</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -3607,6 +3607,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -3655,6 +3657,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -4269,6 +4273,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -4803,6 +4809,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -5887,6 +5895,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -6185,6 +6195,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -10893,6 +10905,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -10941,6 +10955,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -11516,6 +11532,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -11564,6 +11582,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -11612,6 +11632,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -16656,6 +16678,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -16804,7 +16828,8 @@
             <xs:enumeration value="@id/filter_active_button" />
             <xs:enumeration value="@id/filter_all_button" />
             <xs:enumeration value="@id/filter_inactive_button" />
-            <xs:enumeration value="@id/item_content_textview" />
+            <xs:enumeration value="@id/item_content_edittext" />
+            <xs:enumeration value="@id/item_delete_button" />
             <xs:enumeration value="@id/todo_item_edittext" />
             <xs:enumeration value="@id/todo_listview" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
@@ -17135,6 +17160,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -18359,6 +18386,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -20825,6 +20854,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -21030,6 +21061,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -21292,6 +21325,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -21992,6 +22027,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -23901,6 +23938,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -25830,6 +25869,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -26818,6 +26859,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -30223,6 +30266,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -31494,6 +31539,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -32674,6 +32721,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -34337,6 +34386,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -34385,6 +34436,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -37490,6 +37543,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -37538,6 +37593,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -39676,6 +39733,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -39827,6 +39886,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />
@@ -40960,6 +41021,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/button_add" />
+            <xs:enumeration value="@string/button_delete" />
+            <xs:enumeration value="@string/button_edit" />
             <xs:enumeration value="@string/button_filter_active" />
             <xs:enumeration value="@string/button_filter_all" />
             <xs:enumeration value="@string/button_filter_inactive" />

@@ -1,11 +1,11 @@
-App1.ListAdapter, App1;md5579855c995bdb073d8182511e793544c.ListAdapter
-App1.ListAdapter, App1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5579855c995bdb073d8182511e793544c.ListAdapter
-App1.ListAdapter;md5579855c995bdb073d8182511e793544c.ListAdapter
-app1.ListAdapter;md5579855c995bdb073d8182511e793544c.ListAdapter
-App1.MainActivity, App1;md5579855c995bdb073d8182511e793544c.MainActivity
-App1.MainActivity, App1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5579855c995bdb073d8182511e793544c.MainActivity
-App1.MainActivity;md5579855c995bdb073d8182511e793544c.MainActivity
-app1.MainActivity;md5579855c995bdb073d8182511e793544c.MainActivity
+RenanBandeira.Activities.MainActivity, TodoList;md5d9e7a1871ab5dab2020fb4c16b3bc62d.MainActivity
+RenanBandeira.Activities.MainActivity, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d9e7a1871ab5dab2020fb4c16b3bc62d.MainActivity
+RenanBandeira.Activities.MainActivity;md5d9e7a1871ab5dab2020fb4c16b3bc62d.MainActivity
+renanbandeira.activities.MainActivity;md5d9e7a1871ab5dab2020fb4c16b3bc62d.MainActivity
+RenanBandeira.Adapters.ListAdapter, TodoList;md507e2a50806c23c3d70239d3925f1c223.ListAdapter
+RenanBandeira.Adapters.ListAdapter, TodoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md507e2a50806c23c3d70239d3925f1c223.ListAdapter
+RenanBandeira.Adapters.ListAdapter;md507e2a50806c23c3d70239d3925f1c223.ListAdapter
+renanbandeira.adapters.ListAdapter;md507e2a50806c23c3d70239d3925f1c223.ListAdapter
 ReactiveUI.JavaHolder, ReactiveUI;md55ba2aad808203a2e08daef6e680cd9fe.JavaHolder
 ReactiveUI.JavaHolder, ReactiveUI, Version=6.5.0.0, Culture=neutral, PublicKeyToken=null;md55ba2aad808203a2e08daef6e680cd9fe.JavaHolder
 ReactiveUI.JavaHolder;md55ba2aad808203a2e08daef6e680cd9fe.JavaHolder

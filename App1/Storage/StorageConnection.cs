@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using SQLite;
 using System;
+using RenanBandeira.Models;
 
-namespace App1
+namespace RenanBandeira.Storage
 {
     class StorageConnection
     {

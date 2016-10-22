@@ -97,9 +97,8 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
-		/* We need to ensure that "App1.dll" comes first in this list. */
-		"App1.dll",
-		"Akavache.dll",
+		/* We need to ensure that "TodoList.dll" comes first in this list. */
+		"TodoList.dll",
 		"Newtonsoft.Json.dll",
 		"ReactiveUI.dll",
 		"Splat.dll",
@@ -108,32 +107,32 @@ class MonoPackageManager_Resources {
 		"System.Reactive.Interfaces.dll",
 		"System.Reactive.Linq.dll",
 		"System.Reactive.PlatformServices.dll",
+		"System.Threading.dll",
 		"System.Runtime.dll",
+		"System.Collections.dll",
+		"System.Collections.Concurrent.dll",
+		"System.Diagnostics.Debug.dll",
+		"System.Reflection.dll",
+		"System.Linq.dll",
+		"System.Runtime.InteropServices.dll",
+		"System.Runtime.Extensions.dll",
+		"System.Reflection.Extensions.dll",
 		"System.Dynamic.Runtime.dll",
 		"System.ObjectModel.dll",
 		"System.Linq.Expressions.dll",
 		"System.Text.Encoding.dll",
 		"System.IO.dll",
 		"System.Globalization.dll",
-		"System.Collections.dll",
 		"System.Text.RegularExpressions.dll",
 		"System.Xml.ReaderWriter.dll",
 		"System.Xml.XDocument.dll",
 		"System.Threading.Tasks.dll",
 		"System.Runtime.Serialization.Primitives.dll",
-		"System.Reflection.dll",
-		"System.Runtime.Extensions.dll",
 		"System.Text.Encoding.Extensions.dll",
-		"System.Linq.dll",
-		"System.Reflection.Extensions.dll",
-		"System.Threading.dll",
-		"System.Diagnostics.Debug.dll",
 		"System.Diagnostics.Tools.dll",
 		"System.ComponentModel.dll",
 		"System.Resources.ResourceManager.dll",
 		"System.Runtime.InteropServices.WindowsRuntime.dll",
-		"System.Collections.Concurrent.dll",
-		"System.Runtime.InteropServices.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

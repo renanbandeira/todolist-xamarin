@@ -1,6 +1,6 @@
 using SQLite;
 
-namespace App1
+namespace RenanBandeira.Models
 {
     class ListItem
     {
@@ -11,13 +11,6 @@ namespace App1
 
         public bool IsActive { get; set; }
 
-        public ListItem(int ID, string Content, bool IsActive = true)
-        {
-            this.ID = ID;
-            this.Content = Content;
-            this.IsActive = IsActive;
-        }
-
         public ListItem()
         {
             IsActive = true;
@@ -26,6 +19,18 @@ namespace App1
         public override string ToString()
         {
             return string.Format("[LitsItem: ID={0}, Content={1}, IsActive={2}]", ID, Content, IsActive);
+        }
+
+        public ListItem(string Content, int ID = 0, bool IsActive = true)
+        {
+            this.ID = ID;
+            this.Content = Content;
+            this.IsActive = IsActive;
+        }
+
+        public override bool Equals(object item)
+        {
+           return (item is ListItem && ((ListItem)item).ID == ID);
         }
 
     }

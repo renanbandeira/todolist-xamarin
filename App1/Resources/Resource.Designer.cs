@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("App1.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("RenanBandeira.Resource", IsApplication=true)]
 
-namespace App1
+namespace RenanBandeira
 {
 	
 	
@@ -26,7 +26,7 @@ namespace App1
 		
 		public static void UpdateIdValues()
 		{
-			global::Splat.Resource.String.library_name = global::App1.Resource.String.library_name;
+			global::Splat.Resource.String.library_name = global::RenanBandeira.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -74,13 +74,16 @@ namespace App1
 			public const int filter_inactive_button = 2131034118;
 			
 			// aapt resource value: 0x7f050001
-			public const int item_content_textview = 2131034113;
+			public const int item_content_edittext = 2131034113;
 			
 			// aapt resource value: 0x7f050002
-			public const int todo_item_edittext = 2131034114;
+			public const int item_delete_button = 2131034114;
 			
 			// aapt resource value: 0x7f050003
-			public const int todo_listview = 2131034115;
+			public const int todo_item_edittext = 2131034115;
+			
+			// aapt resource value: 0x7f050007
+			public const int todo_listview = 2131034119;
 			
 			static Id()
 			{
@@ -122,6 +125,12 @@ namespace App1
 			
 			// aapt resource value: 0x7f040008
 			public const int button_add = 2130968584;
+			
+			// aapt resource value: 0x7f04000a
+			public const int button_delete = 2130968586;
+			
+			// aapt resource value: 0x7f040009
+			public const int button_edit = 2130968585;
 			
 			// aapt resource value: 0x7f040006
 			public const int button_filter_active = 2130968582;
