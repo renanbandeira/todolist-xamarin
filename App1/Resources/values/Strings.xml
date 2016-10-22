@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">To-Do List</string>
+    <string name="hint_todo_item_add">Add new To-Do item</string>
+    
+  <string name="title_filter">Filter: </string>
+
+  <string name="button_filter_all">All</string>
+  <string name="button_filter_active">Active</string>
+  <string name="button_filter_inactive">Inactive</string>
+  <string name="button_add">Add</string>
+</resources>
