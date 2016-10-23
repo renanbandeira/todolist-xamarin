@@ -42,14 +42,54 @@ namespace RenanBandeira
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f050003
+			public const int accent = 2131034115;
+			
+			// aapt resource value: 0x7f050008
+			public const int background = 2131034120;
+			
+			// aapt resource value: 0x7f050007
+			public const int divider = 2131034119;
+			
+			// aapt resource value: 0x7f050006
+			public const int icons = 2131034118;
+			
+			// aapt resource value: 0x7f050000
+			public const int primary = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int primary_dark = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int primary_light = 2131034114;
+			
+			// aapt resource value: 0x7f050004
+			public const int primary_text = 2131034116;
+			
+			// aapt resource value: 0x7f050005
+			public const int secondary_text = 2131034117;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int activity_padding = 2131034113;
+			// aapt resource value: 0x7f060001
+			public const int activity_padding = 2131099649;
 			
-			// aapt resource value: 0x7f050000
-			public const int todo_count_size = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int todo_count_size = 2131099648;
 			
 			static Dimension()
 			{
@@ -80,35 +120,41 @@ namespace RenanBandeira
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int active_item_checkbox = 2131099648;
+			// aapt resource value: 0x7f080000
+			public const int active_item_checkbox = 2131230720;
 			
-			// aapt resource value: 0x7f060009
-			public const int clear_completed_button = 2131099657;
+			// aapt resource value: 0x7f08000b
+			public const int clear_completed_button = 2131230731;
 			
-			// aapt resource value: 0x7f060005
-			public const int filter_active_button = 2131099653;
+			// aapt resource value: 0x7f080006
+			public const int filter_active_button = 2131230726;
 			
-			// aapt resource value: 0x7f060004
-			public const int filter_all_button = 2131099652;
+			// aapt resource value: 0x7f080005
+			public const int filter_all_button = 2131230725;
 			
-			// aapt resource value: 0x7f060006
-			public const int filter_inactive_button = 2131099654;
+			// aapt resource value: 0x7f080007
+			public const int filter_inactive_button = 2131230727;
 			
-			// aapt resource value: 0x7f060001
-			public const int item_content_edittext = 2131099649;
+			// aapt resource value: 0x7f080009
+			public const int footer_layout = 2131230729;
 			
-			// aapt resource value: 0x7f060002
-			public const int item_delete_button = 2131099650;
+			// aapt resource value: 0x7f080003
+			public const int header_layout = 2131230723;
 			
-			// aapt resource value: 0x7f060008
-			public const int items_count_textview = 2131099656;
+			// aapt resource value: 0x7f080001
+			public const int item_content_edittext = 2131230721;
 			
-			// aapt resource value: 0x7f060003
-			public const int todo_item_edittext = 2131099651;
+			// aapt resource value: 0x7f080002
+			public const int item_delete_button = 2131230722;
 			
-			// aapt resource value: 0x7f060007
-			public const int todo_listview = 2131099655;
+			// aapt resource value: 0x7f08000a
+			public const int items_count_textview = 2131230730;
+			
+			// aapt resource value: 0x7f080004
+			public const int todo_item_edittext = 2131230724;
+			
+			// aapt resource value: 0x7f080008
+			public const int todo_listview = 2131230728;
 			
 			static Id()
 			{
@@ -184,6 +230,28 @@ namespace RenanBandeira
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f070002
+			public const int ActionBarTitleText = 2131165186;
+			
+			// aapt resource value: 0x7f070000
+			public const int ToDoListTheme = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int Widget_Styled_ActionBar = 2131165185;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

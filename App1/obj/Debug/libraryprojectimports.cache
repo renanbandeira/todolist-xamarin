@@ -2,9 +2,9 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\__library_projects__\ReactiveUI\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\__library_projects__\Splat\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\__library_projects__\SQLitePCL.raw\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\__library_projects__\ReactiveUI\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\__library_projects__\Splat\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\__library_projects__\SQLitePCL.raw\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\ReactiveUI\library_project_imports\assets</ResolvedAssetDirectory>
@@ -13,8 +13,8 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\__library_projects__\ReactiveUI.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\__library_projects__\Splat.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\App1\App1\obj\Debug\__library_projects__\SQLitePCL.raw.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\__library_projects__\ReactiveUI.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\__library_projects__\Splat.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\__library_projects__\SQLitePCL.raw.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

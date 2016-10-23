@@ -3,7 +3,7 @@
   <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="TODO List" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+  <application android:label="TODO List" android:icon="@drawable/icon" android:theme="@style/ToDoListTheme" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:icon="@drawable/icon" android:label="TODO List" android:name="md5d9e7a1871ab5dab2020fb4c16b3bc62d.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
