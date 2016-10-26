@@ -13,22 +13,22 @@ namespace RenanBandeira.Adapters
 {
     enum FilterType { All, Active, Inactive };
 
-    class ListAdapter : BaseAdapter<ListItemViewModel>
+    class ListAdapter : BaseAdapter<ToDoItemViewModel>
     {
 
-        private ReactiveList<ListItemViewModel> mItems;
-        private Action<ListItem> OnChange;
-        private List<ListItemViewModel> FilteredItems;
+        private ReactiveList<ToDoItemViewModel> mItems;
+        private Action<ToDoItem> OnChange;
+        private List<ToDoItemViewModel> FilteredItems;
         private Context mContext;
         private FilterType Filter;
 
-        public ListAdapter(Context context, Action<ListItemViewModel> OnAdd, Action<ListItem> OnChange, Action<ListItemViewModel> OnRemove, List<ListItem> items = null)
+        public ListAdapter(Context context, Action<ToDoItemViewModel> OnAdd, Action<ToDoItem> OnChange, Action<ToDoItemViewModel> OnRemove, List<ToDoItem> items = null)
         {
             mContext = context;
-            mItems = new ReactiveList<ListItemViewModel>();
+            mItems = new ReactiveList<ToDoItemViewModel>();
             if (items != null)
             {
-                items.ForEach(item => mItems.Add(new ListItemViewModel(item, OnChange)));
+                items.ForEach(item => mItems.Add(new ToDoItemViewModel(item, OnChange)));
             }
             this.OnChange = OnChange;
             FilteredItems = getFilteredList();
@@ -45,7 +45,7 @@ namespace RenanBandeira.Adapters
             NotifyDataSetChanged();
         }
 
-        public override ListItemViewModel this[int position]
+        public override ToDoItemViewModel this[int position]
         {
             get
             {
@@ -53,7 +53,7 @@ namespace RenanBandeira.Adapters
             }
         }
 
-        private List<ListItemViewModel> getFilteredList()
+        private List<ToDoItemViewModel> getFilteredList()
         {
             if (mItems == null)
             {
@@ -61,11 +61,11 @@ namespace RenanBandeira.Adapters
             }
             if (Filter == FilterType.Active)
             {
-                return mItems.ToList().FindAll(x => x.IsActive);
+                return mItems.ToList().FindAll(x => x.Item.IsActive);
             }
             if (Filter == FilterType.Inactive)
             {
-                return mItems.ToList().FindAll(x => !x.IsActive);
+                return mItems.ToList().FindAll(x => !x.Item.IsActive);
             }
             return mItems.ToList();
         }
@@ -84,7 +84,7 @@ namespace RenanBandeira.Adapters
 
         public void ClearCompletedItems()
         {
-            List<ListItemViewModel> removeItems = mItems.ToList().FindAll(item => !item.IsActive);
+            List<ToDoItemViewModel> removeItems = mItems.ToList().FindAll(item => !item.Item.IsActive);
             mItems.RemoveAll(removeItems);
             FilteredItems = getFilteredList();
             NotifyDataSetChanged();
@@ -95,14 +95,14 @@ namespace RenanBandeira.Adapters
             return position;
         }
 
-        private void ToggleItemActive(ListItemViewModel Item)
+        private void ToggleItemActive(ToDoItemViewModel Item)
         {
-            Item.IsActive = !Item.IsActive;
+            Item.Item.IsActive = !Item.Item.IsActive;
             FilteredItems = getFilteredList();
             NotifyDataSetChanged();
         }
 
-        private void Delete(ListItemViewModel item)
+        private void Delete(ToDoItemViewModel item)
         {
             mItems.Remove(item);
             FilteredItems.Remove(item);
@@ -114,9 +114,9 @@ namespace RenanBandeira.Adapters
             return mItems.ToList().FindAll(item => item.Item.IsActive).Count();
         }
 
-        public void AddItem(ListItem item)
+        public void AddItem(ToDoItem item)
         {
-            mItems.Add(new ListItemViewModel(item, OnChange));
+            mItems.Add(new ToDoItemViewModel(item, OnChange));
             FilteredItems = getFilteredList();
             NotifyDataSetChanged();
         }
@@ -124,7 +124,7 @@ namespace RenanBandeira.Adapters
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             convertView = LayoutInflater.From(mContext).Inflate(Resource.Layout.ListItem, parent, false);
-            ListItemViewModel item = this[position];
+            ToDoItemViewModel item = this[position];
             if (item == null) return convertView;
 
             EditText itemContentEditText = (EditText)convertView.FindViewById(Resource.Id.item_content_edittext);
@@ -138,15 +138,15 @@ namespace RenanBandeira.Adapters
             {
                 if (args.ActionId == ImeAction.Done)
                 {
-                    item.Content = itemContentEditText.Text;
+                    item.Item.Content = itemContentEditText.Text;
                     InputMethodManager inputManager = (InputMethodManager)mContext.GetSystemService(Context.InputMethodService);
                     inputManager.HideSoftInputFromWindow(itemContentEditText.WindowToken, 0);
                     itemContentEditText.ClearFocus();
                 }
             };
             itemContentEditText.SetSingleLine(true);
-            itemContentEditText.Text = item.Content;
-            itemContentEditText.PaintFlags = item.IsActive ?
+            itemContentEditText.Text = item.Item.Content;
+            itemContentEditText.PaintFlags = item.Item.IsActive ?
                 Android.Graphics.PaintFlags.LinearText : Android.Graphics.PaintFlags.StrikeThruText;
             return convertView;
         }

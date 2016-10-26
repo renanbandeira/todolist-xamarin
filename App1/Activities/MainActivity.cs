@@ -28,7 +28,7 @@ namespace RenanBandeira.Activities
         {
             if (actionId == ImeAction.Done)
             {
-                ListItem item = new ListItem();
+                ToDoItem item = new ToDoItem();
                 item.Content = v.Text;
                 MyAdapter.AddItem(item);
                 v.Text = "";
@@ -61,19 +61,19 @@ namespace RenanBandeira.Activities
             UpdateToDoCount();
         }
 
-        private void OnChange(ListItem item)
+        private void OnChange(ToDoItem item)
         {
             Storage.updateData(item);
             UpdateToDoCount();
         }
 
-        private void OnAdd(ListItemViewModel item)
+        private void OnAdd(ToDoItemViewModel item)
         {
             Storage.insertData(item.Item);
             UpdateToDoCount();
         }
 
-        private void OnRemove(ListItemViewModel item)
+        private void OnRemove(ToDoItemViewModel item)
         {
             Storage.removeData(item.Item);
             UpdateToDoCount();

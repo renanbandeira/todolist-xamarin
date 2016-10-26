@@ -20,7 +20,7 @@ namespace RenanBandeira.Storage
             try
             {
                 var connection = new SQLiteConnection(Path);
-                connection.CreateTable<ListItem>();
+                connection.CreateTable<ToDoItem>();
             }
             catch (SQLiteException ex)
             {
@@ -28,7 +28,7 @@ namespace RenanBandeira.Storage
             }
         }
 
-        public void insertData(ListItem data)
+        public void insertData(ToDoItem data)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace RenanBandeira.Storage
             }
         }
 
-        public void updateData(ListItem data)
+        public void updateData(ToDoItem data)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace RenanBandeira.Storage
             }
         }
 
-        public void removeData(ListItem data)
+        public void removeData(ToDoItem data)
         {
             try
             {
@@ -67,12 +67,12 @@ namespace RenanBandeira.Storage
             }
         }
 
-        public List<ListItem> GetData()
+        public List<ToDoItem> GetData()
         {
             try
             {
                 var db = new SQLiteConnection(Path);
-                return db.Query<ListItem>("SELECT * FROM ListItem");
+                return db.Query<ToDoItem>("SELECT * FROM ListItem");
             }
             catch (SQLiteException ex)
             {
