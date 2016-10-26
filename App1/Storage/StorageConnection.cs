@@ -11,7 +11,7 @@ namespace RenanBandeira.Storage
 
         public StorageConnection(string path)
         {
-            Path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            Path = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             Path += path;
             createDatabase();
         }
@@ -72,7 +72,7 @@ namespace RenanBandeira.Storage
             try
             {
                 var db = new SQLiteConnection(Path);
-                return db.Query<ToDoItem>("SELECT * FROM ListItem");
+                return db.Query<ToDoItem>("SELECT * FROM ToDoItem");
             }
             catch (SQLiteException ex)
             {
