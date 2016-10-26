@@ -6,19 +6,33 @@ namespace RenanBandeira.ViewModels
 {
     class ListItemViewModel : ReactiveObject
     {
-        public ListItem Item;
-
-        public Action<ListItem> OnEdit { get; private set; }
-        public Action<ListItem> OnToggleActive { get; private set; }
-        public Action<ListItem> OnDelete { get; private set; }
-
-        public ListItemViewModel(ListItem Item, Action<ListItem> OnEdit, 
-            Action<ListItem> OnToggleActive, Action<ListItem> OnDelete)
+        private string _content;
+        public string Content
         {
-            this.OnEdit = OnEdit;
-            this.OnToggleActive = OnToggleActive;
-            this.OnDelete = OnDelete;
+            get { return _content; }
+            set { this.RaiseAndSetIfChanged(ref _content, value); }
         }
 
+        private bool _isActive;
+        public bool IsActive
+        {
+            get { return _isActive; }
+            set { this.RaiseAndSetIfChanged(ref _isActive, value); }
+        }
+
+        public ListItem Item
+        {
+            get { return new ListItem(Content, ID, IsActive); }
+        }
+
+        readonly int ID;
+
+        public ListItemViewModel(ListItem Item, Action<ListItem> Update)
+        {
+            this.Content = Item.Content;
+            this.IsActive = Item.IsActive;
+            ID = Item.ID;
+            this.WhenAnyValue(i => i.IsActive, i => i.Content).Subscribe(_ => Update(this.Item));
+        }
     }
 }

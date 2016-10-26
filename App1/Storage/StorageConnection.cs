@@ -15,20 +15,16 @@ namespace RenanBandeira.Storage
             Path += path;
             createDatabase();
         }
-        private string createDatabase()
+        private void createDatabase()
         {
             try
             {
                 var connection = new SQLiteConnection(Path);
                 connection.CreateTable<ListItem>();
-                connection.Close();
-                return "Database created";
-
             }
             catch (SQLiteException ex)
             {
                 Console.WriteLine(ex.Message);
-                return ex.Message;
             }
         }
 
@@ -38,7 +34,6 @@ namespace RenanBandeira.Storage
             {
                 var db = new SQLiteConnection(Path);
                 db.Insert(data);
-                db.Close();
             }
             catch (SQLiteException ex)
             {
@@ -52,7 +47,6 @@ namespace RenanBandeira.Storage
             {
                 var db = new SQLiteConnection(Path);
                 db.Update(data);
-                db.Close();
             }
             catch (SQLiteException ex)
             {
@@ -66,7 +60,6 @@ namespace RenanBandeira.Storage
             {
                 var db = new SQLiteConnection(Path);
                 db.Delete(data);
-                db.Close();
             }
             catch (SQLiteException ex)
             {
@@ -79,9 +72,7 @@ namespace RenanBandeira.Storage
             try
             {
                 var db = new SQLiteConnection(Path);
-                List<ListItem> Items = db.Query<ListItem>("SELECT * FROM ListItem");
-                db.Close();
-                return Items;
+                return db.Query<ListItem>("SELECT * FROM ListItem");
             }
             catch (SQLiteException ex)
             {

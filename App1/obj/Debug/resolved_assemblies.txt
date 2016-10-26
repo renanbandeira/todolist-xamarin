@@ -8,6 +8,7 @@ C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\android\assets\Newtonsoft.Json.dll
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\android\assets\ReactiveUI.dll
+C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\android\assets\ReactiveUI.Events.dll
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\android\assets\Splat.dll
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\android\assets\SQLitePCL.raw.dll
 C:\Users\WINDOWS\Documents\Visual Studio 2015\Projects\ToDoList\todolist-xamarin\App1\obj\Debug\android\assets\System.Reactive.Core.dll

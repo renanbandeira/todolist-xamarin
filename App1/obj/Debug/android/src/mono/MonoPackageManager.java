@@ -101,6 +101,7 @@ class MonoPackageManager_Resources {
 		"TodoList.dll",
 		"Newtonsoft.Json.dll",
 		"ReactiveUI.dll",
+		"ReactiveUI.Events.dll",
 		"Splat.dll",
 		"SQLitePCL.raw.dll",
 		"System.Reactive.Core.dll",

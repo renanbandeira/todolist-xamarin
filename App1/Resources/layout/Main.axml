@@ -3,66 +3,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/activity_padding">
-  <LinearLayout
-    android:id="@+id/header_layout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
-    <EditText
-        android:id="@+id/todo_item_edittext"
+    <LinearLayout
+        android:id="@+id/header_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_todo_item_add" />
-    <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/todo_item_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:hint="@string/hint_todo_item_add" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_filter" />
+            <Button
+                android:id="@+id/filter_all_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/button_filter_all" />
+            <Button
+                android:id="@+id/filter_active_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_filter_active" />
+            <Button
+                android:id="@+id/filter_inactive_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_filter_inactive" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/todo_listview"
+        android:layout_above="@+id/footer_layout"
+        android:layout_below="@id/header_layout"
+        android:layout_width="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@id/footer_layout"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/title_filter" />
-      <Button
-          android:id="@+id/filter_all_button"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:enabled="false"
-          android:text="@string/button_filter_all" />
-      <Button
-          android:id="@+id/filter_active_button"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/button_filter_active" />
-      <Button
-          android:id="@+id/filter_inactive_button"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/button_filter_inactive" />
-    </LinearLayout>
-  </LinearLayout>
-  <ListView
-      android:id="@+id/todo_listview"
-      android:layout_above="@+id/footer_layout"
-      android:layout_below="@id/header_layout"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content" />
-  <RelativeLayout
-    android:id="@id/footer_layout"
-      android:layout_alignParentBottom="true"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/items_count_textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/info_todo_count"
-        android:layout_centerVertical="true"
-        android:textSize="@dimen/todo_count_size" />
-    <Button
-        android:id="@+id/clear_completed_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_clear_completed"
-        android:layout_alignParentRight="true" />
-  </RelativeLayout>
+        <TextView
+            android:id="@+id/items_count_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info_todo_count"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/todo_count_size" />
+        <Button
+            android:id="@+id/clear_completed_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_clear_completed"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
 </RelativeLayout>

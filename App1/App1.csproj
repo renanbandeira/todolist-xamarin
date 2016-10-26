@@ -54,6 +54,10 @@
       <HintPath>..\packages\reactiveui-core.6.5.2\lib\MonoAndroid\ReactiveUI.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ReactiveUI.Events, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\reactiveui-events.6.5.0\lib\Monoandroid\ReactiveUI.Events.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Splat, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Splat.1.4.0\lib\monoandroid\Splat.dll</HintPath>
       <Private>True</Private>
@@ -93,8 +97,10 @@
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
     <Compile Include="Storage\StorageConnection.cs" />
+    <Compile Include="ViewModels\ReactiveListItemViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />

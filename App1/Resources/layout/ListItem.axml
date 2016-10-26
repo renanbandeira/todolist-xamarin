@@ -14,6 +14,7 @@
         android:layout_toRightOf="@id/active_item_checkbox"
         android:layout_toLeftOf="@+id/item_delete_button"
         android:layout_centerVertical="true"
+        android:imeOptions="actionDone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
