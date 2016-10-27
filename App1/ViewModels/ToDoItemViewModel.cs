@@ -6,7 +6,7 @@ namespace RenanBandeira.ViewModels
 {
     class ToDoItemViewModel : ReactiveObject
     {
-        private ToDoItem _item;
+        ToDoItem _item;
         public ToDoItem Item
         {
             get { return _item; }
@@ -17,7 +17,6 @@ namespace RenanBandeira.ViewModels
         {
             this.Item = Item;
             Item.Changed.Subscribe(_ => Update(this.Item));
-            //this.WhenAnyValue(i => i.IsActive, i => i.Content).Subscribe(_ => Update(this.Item));
         }
     }
 }

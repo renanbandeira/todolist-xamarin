@@ -84,7 +84,7 @@ namespace RenanBandeira.Adapters
 
         public void ClearCompletedItems()
         {
-            List<ToDoItemViewModel> removeItems = mItems.ToList().FindAll(item => !item.Item.IsActive);
+            var removeItems = mItems.ToList().FindAll(item => !item.Item.IsActive);
             mItems.RemoveAll(removeItems);
             FilteredItems = getFilteredList();
             NotifyDataSetChanged();
@@ -92,7 +92,7 @@ namespace RenanBandeira.Adapters
 
         public override long GetItemId(int position)
         {
-            return position;
+            return this[position].Item.ID;
         }
 
         private void ToggleItemActive(ToDoItemViewModel Item)

@@ -8,10 +8,10 @@ namespace RenanBandeira.Models
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
 
-        private string _content;
+        string _content;
         public string Content { get { return _content; } set { this.RaiseAndSetIfChanged(ref _content, value); } }
 
-        private bool _isActive;
+        bool _isActive;
         public bool IsActive { get { return _isActive; } set { this.RaiseAndSetIfChanged(ref _isActive, value); } }
 
         public ToDoItem()

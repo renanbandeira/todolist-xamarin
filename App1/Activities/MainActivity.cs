@@ -1,7 +1,6 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Runtime;
-using System.Collections.Generic;
 using RenanBandeira.Models;
 using RenanBandeira.Adapters;
 using RenanBandeira.Storage;
@@ -10,7 +9,6 @@ using Android.Widget;
 using Android.Views;
 using Android.Views.InputMethods;
 using System;
-using System.Reactive.Linq;
 using RenanBandeira.ViewModels;
 
 namespace RenanBandeira.Activities
@@ -117,4 +115,3 @@ namespace RenanBandeira.Activities
         }
     }
 }
-
